@@ -1,0 +1,33 @@
+[core]
+    pager = delta
+    editor = nvim
+
+[interactive]
+    diffFilter = delta --color-only
+[add.interactive]
+    useBuiltin = false
+
+[delta]
+    plus-color = "#012800"
+    minus-color = "#340001"
+    navigate = true  
+    syntax-theme = Afterglow
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[user]
+	name = Nicolas Bouliol
+	email = nicolas.bouliol@forestadmin.com
+[pull]
+	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
