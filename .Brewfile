@@ -10,6 +10,8 @@ brew "silicon"
 brew "exa"
 brew "httpie"
 brew "zoxide"
+brew "tree"
+brew "navi"
 
 cask "iterm2"
 

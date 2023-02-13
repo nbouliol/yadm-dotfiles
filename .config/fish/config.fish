@@ -4,6 +4,8 @@ source ~/.zshenv
 
 zoxide init fish | source
 
+navi widget fish | source
+
 set LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
 
 
